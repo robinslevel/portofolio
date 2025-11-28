@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>project accesible city · Robin Korkor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="../styling/stylesheet.css" />
+</head>
+<body>
+  <div class="starfield">
+    <div class="star-layer layer-1"></div>
+    <div class="star-layer layer-2"></div>
+    <div class="star-layer layer-3"></div>
+  </div>
+  <div class="noise-overlay"></div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="../index.html" data-i18n="nav-home">Home</a>
+      <a href="portofolio.html" data-i18n="nav-portfolio">Portfolio</a>
+      <a href="contact.html" data-i18n="nav-contact">Contact</a>
+    </nav>
+
+    <div class="lang-switcher lang-dropdown mobile-lang-switcher">
+      <!-- same dropdown as other pages -->
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <header>
+      <div class="logo">
+        <div class="logo-orbit"></div>
+        <span>ROBIN&nbsp;KORKOR</span>
+      </div>
+
+      <button class="mobile-menu-toggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="header-right">
+        <nav class="main-nav">
+          <a href="../index.html" data-i18n="nav-home">Home</a>
+          <a href="portofolio.html" data-i18n="nav-portfolio">Portfolio</a>
+          <a href="contact.html" data-i18n="nav-contact">Contact</a>
+        </nav>
+
+        <div class="lang-switcher lang-dropdown">
+          <!-- same dropdown as on index -->
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero fade-in">
+        <p class="project-label">Mobile · UX Case Study</p>
+        <h1>project accesible city</h1>
+        <p class="project-meta-line">
+          A concept for an adaptive museum companion that guides visitors with light, sound, and
+          clear routes — especially designed for kids and families.
+        </p>
+
+        <div class="project-layout">
+          <div class="project-media">
+            <!-- Replace this span with your embed (YouTube, Figma, etc.) -->
+            <span>Paste your YouTube / video / Figma prototype embed in this area.</span>
+          </div>
+
+          <aside class="project-sidebar">
+            <h2>Quick info</h2>
+            <ul>
+              <li><strong>Role:</strong> UX / UI design, research</li>
+              <li><strong>Context:</strong> CMD project</li>
+              <li><strong>Focus:</strong> Wayfinding, families, multi-sensory guidance</li>
+            </ul>
+
+            <h2>External links</h2>
+            <div class="project-actions">
+              <a href="https://example.com/museum-case-study" class="primary-link" target="_blank" rel="noopener noreferrer">
+                Open full case study
+              </a>
+              <a href="https://example.com/museum-prototype" target="_blank" rel="noopener noreferrer">
+                Open interactive prototype
+              </a>
+            </div>
+          </aside>
+        </div>
+
+        <div class="project-detail-body">
+          <h2>Problem</h2>
+          <p>
+            Families visiting museums often feel overwhelmed: long routes, unclear wayfinding, and
+            kids losing focus quickly. Existing tools focus on static maps instead of adaptive
+            guidance that reacts to how people move and feel.
+          </p>
+
+          <h2>Process</h2>
+          <p>
+            I started with short interviews and observations inside the museum, mapping how visitors
+            moved and where they hesitated. This led to user journeys that highlighted pain points
+            like confusing transitions between spaces and a lack of clear “break moments”.
+          </p>
+
+          <h3>Key steps</h3>
+          <ul>
+            <li>Quick intercept interviews with visitors and families</li>
+            <li>User journey mapping across arrival, exploration, and exit</li>
+            <li>Sketching possible route types (calm, kid-focused, fast)</li>
+            <li>Wireframes and a clickable prototype to test navigation flows</li>
+          </ul>
+
+          <h2>Solution</h2>
+          <p>
+            The concept app lets visitors choose a route type and then guides them using clear
+            visuals, icons, and optional audio. It highlights rest spots and multi-sensory stops,
+            reducing decision fatigue and making it easier for families to stay engaged together.
+          </p>
+
+          <h2>Learnings &amp; Next Steps</h2>
+          <p>
+            Testing showed that families liked the idea of clear, planned routes, but also needed
+            flexibility for breaks and detours. Future iterations would include more testing
+            on-site, accessibility settings (e.g. contrast, audio options), and tighter integration
+            with museum content and staff workflows.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Robin Korkor. All rights reserved.</span>
+      <span>Guided Museum Journey App</span>
+    </footer>
+  </div>
+
+  <script src="../java/script.js"></script>
+</body>
+</html>

@@ -6,7 +6,7 @@ This website is my UX/UI portfolio — but also a place where I got to play, exp
 If you see stars drifting, glowing buttons, or a menu that feels like it belongs in a space station…
 yeah, I had fun.
 
-🚀 What This Project Is
+What This Project Is:
 
 This is a fully custom website built with:
 
@@ -24,7 +24,7 @@ Project pages, a portfolio overview, and a contact page
 
 Everything is handmade — from the glowing gradients to the motion.
 
-🤖 Did I Use AI?
+Did I Use AI?
 
 Yep. Absolutely. And it was fun.
 
@@ -44,7 +44,7 @@ But every choice, visual, interaction, and weird cosmic vibe?
 That was me.
 AI was more like a friendly co-pilot holding the flashlight while I built the ship.
 
-✨ What I Learned
+What I Learned
 
 This project taught me (in the best way possible):
 
@@ -58,7 +58,7 @@ how to structure a multi-page project
 
 and how fun it is to make a portfolio that actually feels like me
 
-💫 Final Words
+ Final Words
 
 This was honestly a super fun build — part learning, part experimentation, part “what if I make this glow more?”
 I’ll keep updating it as I grow as a designer, but for now…

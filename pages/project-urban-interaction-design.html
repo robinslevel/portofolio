@@ -2,122 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Urban Interaction Design Minor · Robin Korkor</title>
+  <title>Urban Interaction Design — Robin Korkor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
   <link rel="stylesheet" href="../styling/stylesheet.css" />
 </head>
 <body>
-  <div class="starfield">
-    <div class="star-layer layer-1"></div>
-    <div class="star-layer layer-2"></div>
-    <div class="star-layer layer-3"></div>
-  </div>
-  <div class="noise-overlay"></div>
+  <section class="starfield" aria-hidden="true">
+    <span class="star-layer layer-1"></span>
+    <span class="star-layer layer-2"></span>
+    <span class="star-layer layer-3"></span>
+  </section>
+  <section class="noise-overlay" aria-hidden="true"></section>
 
-  <div class="wrapper">
+  <section class="wrapper">
     <header>
-      <div class="logo">
-        <div class="logo-orbit"></div>
+      <a class="logo" href="../index.html" aria-label="Go to home">
+        <span class="logo-orbit" aria-hidden="true"></span>
         <span>ROBIN&nbsp;KORKOR</span>
-      </div>
+      </a>
 
-      <button class="mobile-menu-toggle" aria-label="Open navigation">
-        <span></span>
-        <span></span>
+      <button class="mobile-menu-toggle" aria-label="Open navigation" type="button">
+        <span></span><span></span>
       </button>
 
-      <div class="header-right">
-        <nav class="main-nav">
-          <a href="../index.html" data-i18n="nav-home">Home</a>
-          <a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
-          <a href="contact.html" data-i18n="nav-contact">Contact</a>
+      <section class="header-right">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="../index.html">Home</a>
+          <a href="portfolio.html" class="active">Portfolio</a>
+          <a href="contact.html">Contact</a>
         </nav>
-      </div>
+      </section>
     </header>
 
     <main>
-      <section class="project-hero fade-in">
-        <p class="project-label">Minor · Urban Design</p>
-        <h1>Urban Interaction Design Minor</h1>
-        <p class="project-meta-line">
-          Designing Cities Through Behavior, Technology, and Observation
-        </p>
-
-        <div class="project-layout">
-          <div class="project-media">
-            <!-- Replace this span with your embed (YouTube, Figma, etc.) -->
-            <span>Paste your YouTube / video / Figma prototype embed in this area.</span>
-          </div>
-
-          <aside class="project-sidebar">
-            <h2>Quick info</h2>
-            <ul>
-              <li><strong>Role:</strong> Urban design, research, prototyping</li>
-              <li><strong>Context:</strong> Urban Interaction Design Minor</li>
-              <li><strong>Focus:</strong> Behavior, technology, and public spaces</li>
-            </ul>
-          </aside>
-        </div>
-
-        <div class="project-detail-body">
-          <h2>About the Minor</h2>
-          <p>
-            During the Urban Interaction Design minor, I explored how design can influence the way people experience and interact with cities. The program combined product design, digital technology, behavioral psychology, and urban design, allowing me to approach public spaces from multiple perspectives.
+      <section class="fade-in">
+        <section class="section-heading">
+          <h1 class="hero-title">Urban Interaction Design</h1>
+          <p class="hero-subtitle">
+            Designing interventions for public space by combining behavioral insights, observation, and clear interaction principles.
           </p>
+        </section>
 
-          <h2>What I Explored</h2>
-          <p>
-            Throughout the minor, I worked on projects that examined how urban design decisions affect behavior and social interaction. Some key experiences included:
-          </p>
-          <ul>
-            <li>Designing interactive urban concepts using tools like the Micro:bit.</li>
-            <li>Applying behavioral psychology models such as COM-B and Kahneman’s System 1 & 2 to influence human behavior.</li>
-            <li>Observing public space through sensory research methods, interviews, and fieldwork.</li>
-            <li>Using iMotions eye-tracking technology to analyze how people visually experience urban environments.</li>
-            <li>Conducting research in Amsterdam and Berlin to compare how different cities shape social interaction.</li>
-          </ul>
+        <section class="hero-tags">
+          <span class="pill">Urban</span>
+          <span class="pill">Behavior Design</span>
+          <span class="pill">Service Thinking</span>
+          <span class="pill">Concept Development</span>
+        </section>
 
-          <h2>Example Project: Lee Places (Amsterdam & Berlin)</h2>
-          <p>
-            One of the main projects of the minor was researching “Lee Places” — locations where people naturally feel comfortable staying, interacting, or relaxing. Together with my team, I studied public spaces in Amsterdam and Berlin through:
-          </p>
-          <ul>
-            <li>Interviews with local residents, workers, and visitors</li>
-            <li>Sensory-based observation (what people see, hear, feel, and smell)</li>
-            <li>Video documentation and voice memos</li>
-            <li>Mapping and spatial analysis</li>
-            <li>Comparing how places change throughout the day</li>
-          </ul>
-          <p>
-            This research revealed how atmosphere, greenery, social activity, and accessibility strongly influence whether people choose to stay in a place or just pass through it. Our findings were translated into visual boards, maps, and design proposals that illustrated how urban spaces can become more welcoming and socially engaging.
-          </p>
+        <section class="project-actions">
+          <a class="primary-link" href="https://www.figma.com/deck/xDvh7ZVLyvUurOSaniSSek/concept-deck?node-id=1-42&t=o9JuUyvw5mZ1U9ZL-1" target="_blank" rel="noreferrer">Concept deck</a>
+          <a href="portfolio.html">Back to Portfolio</a>
+        </section>
+      </section>
 
-          <h2>Skills I Developed</h2>
-          <p>
-            During the minor, I strengthened skills across multiple disciplines:
-          </p>
-          <ul>
-            <li><strong>Research & Observation:</strong> Field research, sensory interviews, stakeholder analysis, urban space observation</li>
-            <li><strong>Design & Prototyping:</strong> Concept development, urban sketching, spatial thinking, experience design</li>
-            <li><strong>Technology & Data:</strong> Micro:bit interaction design, eye-tracking analysis with iMotions, understanding urban sensors</li>
-            <li><strong>Collaboration & Communication:</strong> Team-based design processes, visual storytelling, presenting research insights</li>
-          </ul>
+      <section class="fade-in">
+        <section class="hobby-grid">
+          <article class="card">
+            <h2 class="card-title">Challenge</h2>
+            <p>How can we improve urban livability by shaping behavior through design—without forcing people?</p>
+          </article>
+          <article class="card">
+            <h2 class="card-title">My Contribution</h2>
+            <p>Research synthesis, concept ideation, interaction framing, and visual storytelling.</p>
+          </article>
+          <article class="card">
+            <h2 class="card-title">Methods</h2>
+            <p>Observation, interviews, behavior mapping, concept testing.</p>
+          </article>
+        </section>
+      </section>
 
-          <h2>Reflection</h2>
-          <p>
-            This minor significantly changed how I see design. Before, I mainly approached projects from a problem-solution perspective. During the program, I learned to think more deeply about human behavior, emotions, and context. I now understand that designing cities is not only about buildings and infrastructure — it’s about shaping how people move, connect, and experience space. By combining psychology, design, and technology, I’m developing a design approach that focuses on creating meaningful and human-centered urban experiences.
-          </p>
-        </div>
+      <section class="fade-in">
+        <section class="section-heading">
+          <h2 class="section-title">Approach</h2>
+          <p class="section-subtitle">From field insights to intervention ideas.</p>
+        </section>
+
+        <section class="projects-grid">
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">1) Field Observations</h3>
+              <span class="project-meta">Sense</span>
+            </section>
+            <p class="project-body">
+              I focused on real behavior in the street: pace, friction points, where people stop, and what they avoid.
+              This helped uncover where design can reduce stress and encourage better use of space.
+            </p>
+            <section class="project-preview">Add: photos, observation notes, or a simple behavior map.</section>
+          </article>
+
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">2) Behavioral Lens</h3>
+              <span class="project-meta">Frame</span>
+            </section>
+            <p class="project-body">
+              I translated findings into design principles: make the desired behavior easier, more rewarding, and more obvious.
+              The goal was to support community building and comfort.
+            </p>
+            <section class="project-preview">Add: principle list (e.g., reduce friction, increase cues, create micro-rewards).</section>
+          </article>
+
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">3) Concept Directions</h3>
+              <span class="project-meta">Create</span>
+            </section>
+            <p class="project-body">
+              I explored multiple interventions (small → medium) and evaluated them on feasibility and impact.
+              The strongest concepts connected social interaction with environmental improvements.
+            </p>
+            <section class="project-preview">Add: 3 concept cards + why one was chosen.</section>
+          </article>
+
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">4) Storytelling</h3>
+              <span class="project-meta">Explain</span>
+            </section>
+            <p class="project-body">
+              I visualized the concept as a clear story: before/after, user journey, and how the intervention changes behavior.
+            </p>
+            <section class="project-preview">Add: storyboard frames / scenario text.</section>
+          </article>
+        </section>
       </section>
     </main>
 
     <footer>
       <span>© <span id="year"></span> Robin Korkor. All rights reserved.</span>
-      <span>Urban Interaction Design Case Study</span>
     </footer>
-  </div>
+  </section>
 
   <script src="../java/script.js"></script>
 </body>

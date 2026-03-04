@@ -2,162 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Case Study: Lee Places · Robin Korkor</title>
+  <title>Lee Places — Robin Korkor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
   <link rel="stylesheet" href="../styling/stylesheet.css" />
 </head>
 <body>
-  <div class="starfield">
-    <div class="star-layer layer-1"></div>
-    <div class="star-layer layer-2"></div>
-    <div class="star-layer layer-3"></div>
-  </div>
-  <div class="noise-overlay"></div>
+  <section class="starfield" aria-hidden="true">
+    <span class="star-layer layer-1"></span>
+    <span class="star-layer layer-2"></span>
+    <span class="star-layer layer-3"></span>
+  </section>
+  <section class="noise-overlay" aria-hidden="true"></section>
 
-  <div class="wrapper">
+  <section class="wrapper">
     <header>
-      <div class="logo">
-        <div class="logo-orbit"></div>
+      <a class="logo" href="../index.html" aria-label="Go to home">
+        <span class="logo-orbit" aria-hidden="true"></span>
         <span>ROBIN&nbsp;KORKOR</span>
-      </div>
+      </a>
 
-      <button class="mobile-menu-toggle" aria-label="Open navigation">
-        <span></span>
-        <span></span>
+      <button class="mobile-menu-toggle" aria-label="Open navigation" type="button">
+        <span></span><span></span>
       </button>
 
-      <div class="header-right">
-        <nav class="main-nav">
-          <a href="../index.html" data-i18n="nav-home">Home</a>
-          <a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
-          <a href="contact.html" data-i18n="nav-contact">Contact</a>
+      <section class="header-right">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="../index.html">Home</a>
+          <a href="portfolio.html" class="active">Portfolio</a>
+          <a href="contact.html">Contact</a>
         </nav>
-      </div>
+      </section>
     </header>
 
     <main>
-      <section class="project-hero fade-in">
-        <p class="project-label">Case Study · Urban Design</p>
-        <h1>Lee Places – Understanding Urban Atmosphere</h1>
-        <p class="project-meta-line">
-          Exploring public spaces in Amsterdam & Berlin
-        </p>
+      <section class="fade-in">
+        <section class="section-heading">
+          <h1 class="hero-title">Lee Places</h1>
+          <p class="hero-subtitle">
+            A research-driven project exploring how atmosphere and sensory cues shape the way people experience city spaces.
+          </p>
+        </section>
 
-        <div class="project-layout">
-          <div class="project-media">
-            <!-- Replace this span with your embed (YouTube, Figma, etc.) -->
-            <span>Paste your YouTube / video / Figma prototype embed in this area.</span>
-          </div>
+        <section class="hero-tags">
+          <span class="pill">Research</span>
+          <span class="pill">City Experience</span>
+          <span class="pill">Observation</span>
+          <span class="pill">Senses</span>
+        </section>
 
-          <aside class="project-sidebar">
-            <h2>Quick info</h2>
-            <ul>
-              <li><strong>Role:</strong> Urban research, behavioral analysis</li>
-              <li><strong>Context:</strong> Urban Interaction Design Minor</li>
-              <li><strong>Focus:</strong> Public spaces, human behavior, digital media</li>
-            </ul>
-          </aside>
-        </div>
+        <section class="project-actions">
+          <a class="primary-link" href="https://www.figma.com/board/JZJYhkfDT24iJ1wyMvaabN/amsterlin?t=k8dOsdOZp7uoXLY0-1" target="_blank" rel="noreferrer">Open Deck</a>
+          <a href="portfolio.html">Back to Portfolio</a>
+        </section>
+      </section>
 
-        <div class="project-detail-body">
-          <h2>Project Context</h2>
-          <p>
-            During the Urban Interaction Design minor, I worked on the Lee Places project, where we researched locations in Amsterdam and Berlin that naturally invite people to stay, interact, or relax. The goal was to understand what makes a place socially comfortable, and how urban design influences human behavior.
-          </p>
+      <section class="fade-in">
+        <section class="section-heading">
+          <h2 class="section-title">What I Studied</h2>
+          <p class="section-subtitle">Atmosphere, movement, and attention in public space.</p>
+        </section>
 
-          <h2>Research Question</h2>
-          <p>
-            What makes a public space feel like a place where people want to stay rather than just pass through?
-          </p>
+        <section class="hobby-grid">
+          <article class="card">
+            <h3 class="card-title">Focus</h3>
+            <p>How people sense a place: sound, light, density, pace, and social signals.</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Output</h3>
+            <p>A set of insights and design principles that translate atmosphere into actionable design cues.</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Why it matters</h3>
+            <p>Understanding atmosphere helps design spaces that feel safer, calmer, and more inclusive.</p>
+          </article>
+        </section>
+      </section>
 
-          <h2>Research Methods</h2>
-          <p>
-            To understand these spaces, we combined different research approaches:
-          </p>
-          <ul>
-            <li><strong>Field Observation:</strong> Observing how people moved through the space, where they stopped, and how they interacted with their surroundings.</li>
-            <li><strong>Sensory Interviews:</strong> Asking questions focused on human senses, such as:
-              <ul>
-                <li>What do you see in this space?</li>
-                <li>What do you hear around you?</li>
-                <li>What do you feel when you stay here?</li>
-                <li>What do you smell or notice about the atmosphere?</li>
-              </ul>
-            </li>
-            <li><strong>Documentation:</strong> Recording videos, voice memos, photos (day and evening), and maps of the locations to capture how the atmosphere changes throughout the day.</li>
-          </ul>
+      <section class="fade-in">
+        <section class="section-heading">
+          <h2 class="section-title">Process</h2>
+          <p class="section-subtitle">Collect → interpret → translate into design cues.</p>
+        </section>
 
-          <h2>Locations Studied</h2>
-          <p>
-            We explored several public spaces in Amsterdam and Berlin:
-          </p>
-          <ul>
-            <li><strong>Amsterdam:</strong> Backside of Amsterdam Central Station, Entrepotdok & Artis Flamingos, Café Het Kleine Lokaal</li>
-            <li><strong>Berlin:</strong> Berlin Hauptbahnhof, East Side Gallery, Treptower Park, Tempelhofer Feld</li>
-          </ul>
+        <section class="projects-grid">
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">1) Field Notes</h3>
+              <span class="project-meta">Observe</span>
+            </section>
+            <p class="project-body">I collected observations about movement patterns, noise levels, and moments of comfort/discomfort.</p>
+            <section class="project-preview">Add: 3–5 short “place notes” or photos.</section>
+          </article>
 
-          <h2>Key Observations</h2>
-          <p>
-            <strong>Berlin Hauptbahnhof:</strong> Although the station was busy, the atmosphere felt surprisingly open and social. We observed spontaneous interactions, street performances, and conversations between strangers. However, people working nearby preferred quieter locations with more greenery.
-          </p>
-          <p>
-            <strong>East Side Gallery:</strong> This space had a dual character. During the day, it was crowded and fast-paced, mostly filled with tourists. In the evening, it transformed into a calmer space where people lingered by the river, enjoying social interactions and relaxation.
-          </p>
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">2) Patterns</h3>
+              <span class="project-meta">Synthesize</span>
+            </section>
+            <p class="project-body">I grouped observations into themes (e.g., openness, safety cues, rhythm, and pauses).</p>
+            <section class="project-preview">Add: theme map or clustering screenshot.</section>
+          </article>
 
-          <h2>Role of Digital Media</h2>
-          <p>
-            We also analyzed how digital technology interacts with urban space. Examples included:
-          </p>
-          <ul>
-            <li>QR codes explaining the murals at the East Side Gallery</li>
-            <li>Audio guides and digital storytelling</li>
-            <li>VR experiences recreating the Berlin Wall</li>
-          </ul>
-          <p>
-            This showed how digital layers can enhance physical spaces, making history and culture more accessible.
-          </p>
-
-          <h2>Key Insight</h2>
-          <p>
-            Across both cities, we discovered that Lee Places share common characteristics:
-          </p>
-          <ul>
-            <li>✔ Presence of greenery or water</li>
-            <li>✔ Opportunities for social interaction</li>
-            <li>✔ Comfortable places to sit and stay</li>
-            <li>✔ A sense of safety and openness</li>
-            <li>✔ A balance between activity and calmness</li>
-          </ul>
-          <p>
-            Spaces lacking these elements often become pass-through spaces instead of gathering places.
-          </p>
-
-          <h2>Outcome</h2>
-          <p>
-            Our team translated our research into:
-          </p>
-          <ul>
-            <li>Urban analysis boards</li>
-            <li>Comparative maps</li>
-            <li>Videos documenting sensory experiences</li>
-            <li>Design insights for improving public spaces</li>
-          </ul>
-
-          <h2>Reflection</h2>
-          <p>
-            This project helped me understand how urban design directly influences human behavior. I learned that designing public space is not only about architecture or aesthetics — it’s about creating environments where people feel comfortable, connected, and engaged. By combining behavioral psychology, urban observation, and digital tools, I developed a stronger approach to human-centered urban design.
-          </p>
-        </div>
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">3) Design Translation</h3>
+              <span class="project-meta">Apply</span>
+            </section>
+            <p class="project-body">I converted insights into design cues: guidance, pacing, and sensory “markers” that help people orient.</p>
+            <section class="project-preview">Add: “principles → example” list.</section>
+          </article>
+        </section>
       </section>
     </main>
 
     <footer>
       <span>© <span id="year"></span> Robin Korkor. All rights reserved.</span>
-      <span>Lee Places Case Study</span>
     </footer>
-  </div>
+  </section>
 
   <script src="../java/script.js"></script>
 </body>

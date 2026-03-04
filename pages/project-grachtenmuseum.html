@@ -2,104 +2,161 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Het Grachten Museum · Robin Korkor</title>
+  <title>Het Grachten Museum — Robin Korkor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
   <link rel="stylesheet" href="../styling/stylesheet.css" />
 </head>
 <body>
-  <div class="starfield">
-    <div class="star-layer layer-1"></div>
-    <div class="star-layer layer-2"></div>
-    <div class="star-layer layer-3"></div>
-  </div>
-  <div class="noise-overlay"></div>
+  <!-- Optional (only if you use these on other pages) -->
+  <section class="starfield" aria-hidden="true">
+    <span class="star-layer layer-1"></span>
+    <span class="star-layer layer-2"></span>
+    <span class="star-layer layer-3"></span>
+  </section>
+  <section class="noise-overlay" aria-hidden="true"></section>
 
-  <div class="wrapper">
+  <section class="wrapper">
     <header>
-      <div class="logo">
-        <div class="logo-orbit"></div>
+      <a class="logo" href="../index.html" aria-label="Go to home">
+        <span class="logo-orbit" aria-hidden="true"></span>
         <span>ROBIN&nbsp;KORKOR</span>
-      </div>
+      </a>
 
-      <button class="mobile-menu-toggle" aria-label="Open navigation">
-        <span></span>
-        <span></span>
+      <button class="mobile-menu-toggle" aria-label="Open navigation" type="button">
+        <span></span><span></span>
       </button>
 
-      <div class="header-right">
-        <nav class="main-nav">
-          <a href="../index.html" data-i18n="nav-home">Home</a>
-          <a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
-          <a href="contact.html" data-i18n="nav-contact">Contact</a>
+      <section class="header-right">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="../index.html">Home</a>
+          <a href="portfolio.html" class="active">Portfolio</a>
+          <a href="contact.html">Contact</a>
         </nav>
-      </div>
+      </section>
     </header>
 
     <main>
-      <section class="project-hero fade-in">
-        <p class="project-label">Museum · UX Case Study</p>
-        <h1>Het Grachten Museum</h1>
-        <p class="project-meta-line">
-          “De geschiedenis van Amsterdam in hét museum over de grachten.”
-        </p>
-
-        <div class="project-layout">
-          <div class="project-media">
-            <!-- Replace this span with your embed (YouTube, Figma, etc.) -->
-            <span>Paste your YouTube / video / Figma prototype embed in this area.</span>
-          </div>
-
-          <aside class="project-sidebar">
-            <h2>Quick info</h2>
-            <ul>
-              <li><strong>Role:</strong> UX / UI design, research</li>
-              <li><strong>Context:</strong> CMD project</li>
-              <li><strong>Focus:</strong> Museum marketing, history, and engagement</li>
-            </ul>
-
-            <h2>External links</h2>
-            <div class="project-actions">
-              <a href="https://grachten.museum/" class="primary-link" target="_blank" rel="noopener noreferrer">
-                Visit the Grachten Museum
-              </a>
-              <a href="https://www.instagram.com/grachtenmuseum/" target="_blank" rel="noopener noreferrer">
-                Follow on Instagram
-              </a>
-            </div>
-          </aside>
-        </div>
-
-        <div class="project-detail-body">
-          <h2>About the Museum</h2>
-          <p>
-            Het Grachtenmuseum in Amsterdam, ook bekend als het Museum of the Canals, is gevestigd in een prachtig historisch pand aan de Herengracht 386. Het museum richt zich op de rijke geschiedenis van de Amsterdamse grachten, een UNESCO-werelderfgoed, en biedt inzicht in hoe Amsterdam zich heeft ontwikkeld van een klein vissersdorp tot een wereldstad.
+      <section class="fade-in">
+        <section class="section-heading">
+          <h1 class="hero-title">Het Grachten Museum</h1>
+          <p class="hero-subtitle">
+            A concept focused on making exhibition navigation calmer and more intuitive through clear interaction flow and visual hierarchy.
           </p>
+        </section>
 
-          <h2>Exhibitions</h2>
-          <p>
-            The museum presents a fascinating permanent exhibition, "De Mystiek van de Amsterdamse Grachten," which takes visitors on a 45-minute interactive tour through 400 years of Amsterdam's history. Temporary exhibitions, such as "Chad in Amsterdam" and "Wie woonde hier?", offer fresh perspectives on the city's cultural heritage.
-          </p>
+        <section class="hero-tags">
+          <span class="pill">Museum</span>
+          <span class="pill">UX / UI</span>
+          <span class="pill">Wayfinding</span>
+          <span class="pill">Research → Prototype</span>
+        </section>
 
-          <h2>Marketing Insights</h2>
-          <p>
-            The museum leverages various marketing channels, including email newsletters, social media platforms like Instagram and TikTok, and its official website. However, there is room for improvement in SEO and responsive design to better engage younger audiences.
-          </p>
+        <section class="project-actions">
+          <a class="primary-link" href="https://www.canva.com/design/DAGF2-pnAlg/Me3fGH0VoO_yZw9N8vhG3A/edit?utm_content=DAGF2-pnAlg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noreferrer">Open Deck</a>
+          <a href="portfolio.html">Back to Portfolio</a>
+        </section>
+      </section>
 
-          <h2>Future Opportunities</h2>
-          <p>
-            By targeting young adults and students in Amsterdam, the museum can expand its reach. Initiatives like augmented reality advertisements, creative contests, and VR experiences can make the museum more appealing to this demographic.
-          </p>
-        </div>
+      <section class="fade-in">
+        <section class="hobby-grid">
+          <article class="card">
+            <h2 class="card-title">Goal</h2>
+            <p>Help visitors understand where they are, what comes next, and how to move through the story—without overload.</p>
+          </article>
+          <article class="card">
+            <h2 class="card-title">My Role</h2>
+            <p>UX research, interaction flows, structure, visual design, and prototyping.</p>
+          </article>
+          <article class="card">
+            <h2 class="card-title">Tools</h2>
+            <p>Figma, user research notes, basic prototyping & presentation.</p>
+          </article>
+        </section>
+      </section>
+
+      <section class="fade-in">
+        <section class="section-heading">
+          <h2 class="section-title">Process</h2>
+          <p class="section-subtitle">How I moved from insights to an interface concept.</p>
+        </section>
+
+        <section class="projects-grid">
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">1) Research & Insights</h3>
+              <span class="project-meta">Discover</span>
+            </section>
+            <p class="project-body">
+              I looked at how visitors behave in a museum context: where they hesitate, what they overlook, and what makes them feel “lost”.
+              The focus was on reducing cognitive load and improving clarity in moments of choice.
+            </p>
+            <section class="project-preview">Add: key insight bullets / interview quotes / observation notes.</section>
+          </article>
+
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">2) Structure & Flow</h3>
+              <span class="project-meta">Define</span>
+            </section>
+            <p class="project-body">
+              I translated insights into a simple navigation logic: a clear “where am I / where next” structure, with a calm visual hierarchy.
+              I mapped the visitor journey and designed the flow around decision points.
+            </p>
+            <section class="project-preview">Add: sitemap / flowchart / key screens overview.</section>
+          </article>
+
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">3) UI Concept</h3>
+              <span class="project-meta">Design</span>
+            </section>
+            <p class="project-body">
+              I created a UI direction that feels quiet and confident—using spacing, contrast, and consistent components to guide attention.
+              The design supports both fast scanning and deeper reading.
+            </p>
+            <section class="project-preview">Add: component set / color choices / typography decisions.</section>
+          </article>
+
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">4) Prototype & Next Steps</h3>
+              <span class="project-meta">Test</span>
+            </section>
+            <p class="project-body">
+              I built a clickable prototype to test whether people can navigate without explanation.
+              Next steps would be quick usability testing with visitors and iterative refinement.
+            </p>
+            <section class="project-preview">Add: prototype link + what you would test.</section>
+          </article>
+        </section>
+      </section>
+
+      <section class="fade-in">
+        <section class="section-heading">
+          <h2 class="section-title">Outcome</h2>
+          <p class="section-subtitle">What this concept improves.</p>
+        </section>
+        <section class="hobby-grid">
+          <article class="card">
+            <h3 class="card-title">Clarity</h3>
+            <p>Visitors understand location and next steps faster.</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Calm Experience</h3>
+            <p>Less visual noise, more focus on the story and objects.</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Consistency</h3>
+            <p>Reusable components keep the system stable and scalable.</p>
+          </article>
+        </section>
       </section>
     </main>
 
     <footer>
       <span>© <span id="year"></span> Robin Korkor. All rights reserved.</span>
-      <span>Het Grachten Museum Case Study</span>
     </footer>
-  </div>
+  </section>
 
   <script src="../java/script.js"></script>
 </body>

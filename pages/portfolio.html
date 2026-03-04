@@ -7,58 +7,201 @@
   <link rel="stylesheet" href="../styling/stylesheet.css" />
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <div class="logo">
-        <div class="logo-orbit"></div>
+  <section class="wrapper">
+    <header class="site-header">
+      <a class="logo" href="../index.html" aria-label="Go to home">
+        <span class="logo-orbit" aria-hidden="true"></span>
         <span>ROBIN&nbsp;KORKOR</span>
-      </div>
+      </a>
 
-      <button class="mobile-menu-toggle" aria-label="Open navigation">
+      <button class="mobile-menu-toggle" aria-label="Open navigation" type="button">
         <span></span><span></span>
       </button>
 
-      <div class="header-right">
-        <nav class="main-nav">
+      <section class="header-right">
+        <nav class="main-nav" aria-label="Main navigation">
           <a href="../index.html" data-i18n="nav-home">Home</a>
           <a href="portfolio.html" class="active" data-i18n="nav-portfolio">Portfolio</a>
           <a href="contact.html" data-i18n="nav-contact">Contact</a>
         </nav>
-      </div>
+      </section>
     </header>
 
     <main>
       <section class="fade-in">
-        <div class="section-heading">
+        <section class="section-heading">
           <h2 class="section-title">Portfolio</h2>
-        </div>
+          <p class="section-subtitle">A selection of work across museums, urban design, research, and front-end.</p>
+        </section>
 
-        <div class="project-grid">
-          <div class="project-card">
-            <h3>Het Grachten Museum</h3>
-            <p>Exploring the history of Amsterdam's canals through design.</p>
-            <a href="project-grachtenmuseum.html" class="btn btn-primary">View Project</a>
-          </div>
+        <section class="projects-grid">
 
-          <div class="project-card">
-            <h3>Urban Interaction Design</h3>
-            <p>Designing cities through behavior, technology, and observation.</p>
-            <a href="project-urban-interaction-design.html" class="btn btn-primary">View Project</a>
-          </div>
+          <!-- Meetosis -->
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">Meetosis</h3>
+              <span class="project-meta">Healthcare</span>
+            </section>
 
-          <div class="project-card">
-            <h3>Lee Places</h3>
-            <p>Understanding urban atmosphere in Amsterdam & Berlin.</p>
-            <a href="project-lee-places.html" class="btn btn-primary">View Project</a>
-          </div>
-        </div>
+            <section class="project-tags">
+              <span class="project-tag">Interaction Design</span>
+              <span class="project-tag">Networking</span>
+              <span class="project-tag">Prototype</span>
+            </section>
+
+            <p class="project-body">
+              Concept app for pediatric doctors and researchers to find collaborators, events, and research opportunities.
+            </p>
+
+            <section class="project-actions">
+              <a class="primary-link" href="project-meetosis.html">View Project</a>
+              <a href="https://www.figma.com/proto/GbnQHMqThK4M6mBnFxyaxD?node-id=0-1&t=k8dOsdOZp7uoXLY0-6" target="_blank" rel="noreferrer">Prototype</a>
+            </section>
+          </article>
+
+          <!-- Service Design -->
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">Service Design — Multisensory Museum Route</h3>
+              <span class="project-meta">Museum</span>
+            </section>
+
+            <section class="project-tags">
+              <span class="project-tag">Service Blueprint</span>
+              <span class="project-tag">Inclusive Design</span>
+              <span class="project-tag">User Testing</span>
+            </section>
+
+            <p class="project-body">
+              Designing a multisensory route for “The Things That Matter” using scent, sound, and visual wayfinding.
+            </p>
+
+            <section class="project-actions">
+              <a class="primary-link" href="project-service-design.html">View Project</a>
+              <a href="#" target="_blank" rel="noreferrer">Design Deck</a>
+            </section>
+          </article>
+
+          <!-- Plog de Dag -->
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">Plog de Dag</h3>
+              <span class="project-meta">Municipality</span>
+            </section>
+
+            <section class="project-tags">
+              <span class="project-tag">Responsive UI</span>
+              <span class="project-tag">2 Pages</span>
+              <span class="project-tag">Solo</span>
+            </section>
+
+            <p class="project-body">
+              Responsive website concept (mobile, iPad, desktop) for a Rotterdam clean-up day — main page + sign-up page.
+            </p>
+
+            <section class="project-actions">
+              <a class="primary-link" href="project-plog-de-dag.html">View Project</a>
+              <a href="https://www.figma.com/proto/Dk7bcRpa3mOxeubN66WDzP/vormgeving2_lo-fi?node-id=0-1&t=NX8gzsAo2MQjtnCp-1" target="_blank" rel="noreferrer">Prototype</a>
+            </section>
+          </article>
+
+          <!-- Barclays rebuild -->
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">Barclays Website Rebuild</h3>
+              <span class="project-meta">Front-end</span>
+            </section>
+
+            <section class="project-tags">
+              <span class="project-tag">HTML / CSS / JS</span>
+              <span class="project-tag">Light/Dark Mode</span>
+              <span class="project-tag">2 Pages</span>
+            </section>
+
+            <p class="project-body">
+              Recreated two Barclays pages with semantic HTML, clean CSS, and a theme toggle using JavaScript.
+            </p>
+
+            <section class="project-actions">
+              <a class="primary-link" href="project-barclays-rebuild.html">View Project</a>
+              <a href="https://github.com/robinslevel/barclays" target="_blank" rel="noreferrer">GitHub</a>
+            </section>
+          </article>
+
+          <!-- Het Grachten Museum -->
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">Het Grachten Museum</h3>
+              <span class="project-meta">Museum</span>
+            </section>
+
+            <section class="project-tags">
+              <span class="project-tag">UX / UI</span>
+              <span class="project-tag">Wayfinding</span>
+            </section>
+
+            <p class="project-body">
+              Exploring the history of Amsterdam's canals through design.
+            </p>
+
+            <section class="project-actions">
+              <a class="primary-link" href="project-grachtenmuseum.html">View Project</a>
+              <a href="../RMDD_robinkorkor_207.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+            </section>
+          </article>
+
+          <!-- Urban Interaction Design -->
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">Urban Interaction Design</h3>
+              <span class="project-meta">Urban</span>
+            </section>
+
+            <section class="project-tags">
+              <span class="project-tag">Behavior</span>
+              <span class="project-tag">Systems</span>
+            </section>
+
+            <p class="project-body">
+              Designing cities through behavior, technology, and observation.
+            </p>
+
+            <section class="project-actions">
+              <a class="primary-link" href="project-urban-interaction-design.html">View Project</a>
+              <a href="#" target="_blank" rel="noreferrer">Open PDF</a>
+            </section>
+          </article>
+
+          <!-- Lee Places -->
+          <article class="project-card">
+            <section class="project-header">
+              <h3 class="project-title">Lee Places</h3>
+              <span class="project-meta">Research</span>
+            </section>
+
+            <section class="project-tags">
+              <span class="project-tag">Fieldwork</span>
+              <span class="project-tag">Atmosphere</span>
+            </section>
+
+            <p class="project-body">
+              Understanding urban atmosphere in Amsterdam & Berlin.
+            </p>
+
+            <section class="project-actions">
+              <a class="primary-link" href="project-lee-places.html">View Project</a>
+              <a href="#" target="_blank" rel="noreferrer">Open PDF</a>
+            </section>
+          </article>
+
+        </section>
       </section>
     </main>
 
     <footer>
       <span>© <span id="year"></span> Robin Korkor. All rights reserved.</span>
     </footer>
-  </div>
+  </section>
 
   <script src="../java/script.js"></script>
 </body>

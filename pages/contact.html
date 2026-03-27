@@ -4,27 +4,58 @@
   <meta charset="UTF-8" />
   <title>Contact — Robin Korkor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Robin Korkor — UX Design student available for collaborations and opportunities." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — Robin Korkor" />
+  <meta property="og:description" content="Get in touch with Robin Korkor — UX Design student available for collaborations and opportunities." />
+  <meta property="og:image" content="https://robinslevel.github.io/portofolio/images/preview.jpg" />
+  <meta property="og:url" content="https://robinslevel.github.io/portofolio/pages/contact.html" />
+  <meta property="og:site_name" content="Robin Korkor" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Robin Korkor" />
+  <meta name="twitter:description" content="Get in touch with Robin Korkor — UX Design student available for collaborations and opportunities." />
+  <meta name="twitter:image" content="https://robinslevel.github.io/portofolio/images/preview.jpg" />
+
   <link rel="stylesheet" href="../styling/stylesheet.css" />
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <div class="logo">
-        <div class="logo-orbit"></div>
-        <span>ROBIN&nbsp;KORKOR</span>
-      </div>
+  <!-- Mobile menu overlay -->
+  <section class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <section class="mobile-menu-inner" role="dialog" aria-modal="true" aria-label="Navigation menu">
+      <header class="mobile-menu-header">
+        <span class="mobile-menu-title">Menu</span>
+        <button class="mobile-menu-close" type="button" aria-label="Close navigation">✕</button>
+      </header>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="../index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </section>
+  </section>
 
-      <button class="mobile-menu-toggle" aria-label="Open navigation">
+  <section class="wrapper">
+    <header>
+      <a class="logo" href="../index.html" aria-label="Go to home">
+        <span class="logo-orbit" aria-hidden="true"></span>
+        <span>ROBIN&nbsp;KORKOR</span>
+      </a>
+
+      <button class="mobile-menu-toggle" type="button" aria-label="Open navigation">
         <span></span><span></span>
       </button>
 
-      <div class="header-right">
-        <nav class="main-nav">
+      <section class="header-right">
+        <nav class="main-nav" aria-label="Main navigation">
           <a href="../index.html" data-i18n="nav-home">Home</a>
           <a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
           <a href="contact.html" class="active" data-i18n="nav-contact">Contact</a>
         </nav>
-      </div>
+      </section>
     </header>
 
     <main>
@@ -58,7 +89,7 @@
     <footer>
       <span>© <span id="year"></span> Robin Korkor. All rights reserved.</span>
     </footer>
-  </div>
+  </section>
 
   <script src="../java/script.js"></script>
 </body>

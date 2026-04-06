@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tamagotchi — Robin Korkor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tamagotchi - A browser-based virtual pet game built with vanilla JavaScript." />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="../styling/stylesheet.css" />
+</head>
+<body>
+
+<!-- Background -->
+<section class="starfield" aria-hidden="true">
+  <span class="star-layer layer-1"></span>
+  <span class="star-layer layer-2"></span>
+  <span class="star-layer layer-3"></span>
+</section>
+<section class="noise-overlay" aria-hidden="true"></section>
+
+<!-- Mobile menu overlay -->
+<section class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <section class="mobile-menu-inner" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <header class="mobile-menu-header">
+      <span class="mobile-menu-title">Menu</span>
+      <button class="mobile-menu-close" type="button" aria-label="Close navigation">✕</button>
+    </header>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="../index.html">Home</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </section>
+</section>
+
+<section class="wrapper">
+
+<header>
+  <a class="logo" href="../index.html">
+    <span class="logo-orbit"></span>
+    <span>ROBIN&nbsp;KORKOR</span>
+  </a>
+
+  <button class="mobile-menu-toggle" aria-label="Open navigation">
+    <span></span><span></span>
+  </button>
+
+  <section class="header-right">
+    <nav class="main-nav">
+      <a href="../index.html">Home</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </section>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="fade-in">
+
+<section class="section-heading">
+<h1 class="hero-title">Tamagotchi — Virtual Pet Game</h1>
+
+<p class="hero-subtitle">
+A browser-based Tamagotchi-style game where users take care of a virtual pet 
+by managing its core needs: hunger, happiness, and energy.
+</p>
+</section>
+
+<section class="hero-tags">
+<span class="pill">JavaScript</span>
+<span class="pill">HTML5</span>
+<span class="pill">CSS3</span>
+<span class="pill">Game Development</span>
+</section>
+
+<section class="project-actions">
+<a class="btn btn-primary" href="https://robinslevel.github.io/Tamagotchi/" target="_blank">Play Game</a>
+<a class="btn btn-ghost" href="https://github.com/robinslevel/Tamagotchi" target="_blank">View on GitHub</a>
+</section>
+
+</section>
+
+
+<!-- PROJECT FACTS -->
+
+<section class="fade-in">
+
+<section class="hobby-grid">
+
+<article class="card">
+<h3 class="card-title">Context</h3>
+<p>
+A personal project exploring how simple mechanics and feedback loops 
+can create an engaging and emotional user experience.
+</p>
+</article>
+
+<article class="card">
+<h3 class="card-title">Concept</h3>
+<p>
+Players maintain balance by feeding, playing with, and resting their pet. 
+Each action affects multiple stats, requiring strategic decisions.
+</p>
+</article>
+
+<article class="card">
+<h3 class="card-title">Focus</h3>
+<p>
+Building a clear game loop and state system using only vanilla JavaScript, 
+with no external frameworks or dependencies.
+</p>
+</article>
+
+<article class="card">
+<h3 class="card-title">Outcome</h3>
+<p>
+A fully playable browser game featuring pet evolution, random events, 
+and a game-over system.
+</p>
+</article>
+
+</section>
+
+</section>
+
+
+<!-- KEY FEATURES -->
+
+<section class="fade-in">
+
+<section class="section-heading">
+<h2 class="section-title">Key Features</h2>
+</section>
+
+<section class="hobby-grid">
+
+<article class="card">
+<h3 class="card-title">Stat Management</h3>
+<p>Balance hunger, happiness, and energy to keep your pet alive.</p>
+</article>
+
+<article class="card">
+<h3 class="card-title">Pet Evolution</h3>
+<p>Watch your pet grow through 5 stages from Egg to Adult.</p>
+</article>
+
+<article class="card">
+<h3 class="card-title">Random Events</h3>
+<p>Surprise events that influence your pet's stats dynamically.</p>
+</article>
+
+<article class="card">
+<h3 class="card-title">Game Over System</h3>
+<p>Challenge mode — if any stat reaches zero, game ends.</p>
+</article>
+
+<article class="card">
+<h3 class="card-title">Visual Feedback</h3>
+<p>Animations and state indicators reinforce interactions.</p>
+</article>
+
+<article class="card">
+<h3 class="card-title">Zero Dependencies</h3>
+<p>Lightweight, framework-free implementation.</p>
+</article>
+
+</section>
+
+</section>
+
+
+<!-- HOW TO PLAY -->
+
+<section class="fade-in">
+
+<section class="section-heading">
+<h2 class="section-title">How to Play</h2>
+</section>
+
+<ul>
+<li><strong>Feed</strong> — Increases hunger, decreases energy slightly</li>
+<li><strong>Play</strong> — Increases happiness, decreases energy and hunger</li>
+<li><strong>Sleep</strong> — Toggle sleep mode to restore energy (other stats decrease slowly)</li>
+<li>Keep all stats above zero to survive</li>
+<li>Watch for random events that give bonus stats!</li>
+</ul>
+
+</section>
+
+
+<!-- TECH STACK -->
+
+<section class="fade-in">
+
+<section class="section-heading">
+<h2 class="section-title">Tech Stack</h2>
+</section>
+
+<section class="hero-tags">
+<span class="pill">JavaScript</span>
+<span class="pill">HTML5</span>
+<span class="pill">CSS3</span>
+<span class="pill">CSS Animations</span>
+</section>
+
+</section>
+
+
+<!-- WHAT I LEARNED -->
+
+<section class="fade-in">
+
+<section class="section-heading">
+<h2 class="section-title">What I Learned</h2>
+</section>
+
+<p>
+This project helped me better understand:
+</p>
+
+<ul>
+<li>Managing state and logic in interactive applications</li>
+<li>Designing feedback systems that guide user behavior</li>
+<li>Structuring small-scale games without frameworks</li>
+<li>Building a clear game loop and state system in JavaScript</li>
+</ul>
+
+<a href="portfolio.html" class="back-link">← Back to Portfolio</a>
+
+</section>
+
+
+</main>
+
+
+<footer>
+<span>© <span id="year"></span> Robin Korkor. All rights reserved.</span>
+</footer>
+
+</section>
+
+<script src="../java/script.js"></script>
+</body>
+</html>

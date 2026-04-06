@@ -1535,3 +1535,187 @@ footer{
   color: var(--muted);
   border-top: 1px solid rgba(255,255,255,0.06);
 }
+
+/* ---------- PROJECT DETAIL PAGE STYLES ---------- */
+
+/* Better grid layout for project detail pages - 2 columns on larger screens */
+@media (min-width: 680px) {
+  .hobby-grid,
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .hobby-grid,
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Lists styling for project pages */
+main ul,
+main ol {
+  margin: 16px 0 24px 0;
+  padding-left: 1.5em;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+main ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+main ul li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 10px;
+}
+
+main ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), #67e8f9);
+  box-shadow: 0 0 8px rgba(123, 92, 255, 0.5);
+}
+
+main ol li {
+  margin-bottom: 10px;
+  padding-left: 0.5em;
+}
+
+/* Paragraph styling for project pages */
+main > section p,
+.project-description p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin-bottom: 18px;
+  max-width: 720px;
+}
+
+/* Strong text emphasis */
+main strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Hero title adjustments for project pages */
+main .hero-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  margin-bottom: 12px;
+}
+
+main .hero-subtitle {
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 680px;
+  margin-bottom: 20px;
+}
+
+/* Section heading spacing for project pages */
+main .section-heading {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+main .section-heading h2.section-title {
+  font-size: 1rem;
+  background: linear-gradient(120deg, #b7a2ff, #7b5cff, #67e8f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Card improvements for project details */
+.hobby-grid .card,
+.skill-grid .card {
+  padding: 18px 16px 20px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hobby-grid .card:hover,
+.skill-grid .card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(123, 92, 255, 0.4);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.hobby-grid .card-title,
+.skill-grid .card-title {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hobby-grid .card p,
+.skill-grid .card p {
+  margin-bottom: 0;
+  font-size: 0.85rem;
+}
+
+/* Project actions button spacing */
+main .project-actions {
+  margin-top: 28px;
+  margin-bottom: 24px;
+}
+
+/* Hero tags spacing */
+main .hero-tags {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 680px) {
+  .hobby-grid,
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  main .hero-title {
+    font-size: 1.6rem;
+  }
+  
+  main .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  
+  main .section-subtitle {
+    text-align: left;
+  }
+}
+
+/* Back to portfolio link */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(7, 9, 22, 0.95);
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.back-link:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  transform: translateX(-4px);
+  border-color: rgba(123, 92, 255, 0.5);
+}

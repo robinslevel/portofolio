@@ -1,0 +1,55 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tamaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <linearGradient id="greenBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4CAF50"/>
+      <stop offset="100%" style="stop-color:#8BC34A"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#tamaBg)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="650" cy="100" r="150" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="150" cy="350" r="120" fill="rgba(255,255,255,0.03)"/>
+  
+  <!-- Game container mockup -->
+  <rect x="250" y="50" width="300" height="350" rx="20" fill="white"/>
+  
+  <!-- Title -->
+  <text x="400" y="95" text-anchor="middle" fill="#333" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="bold">Tamagotchi</text>
+  
+  <!-- Pet circle -->
+  <circle cx="400" cy="175" r="55" fill="#f5f7fa"/>
+  <text x="400" y="195" text-anchor="middle" font-size="50">🐥</text>
+  
+  <!-- Stats -->
+  <text x="285" y="265" fill="#555" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">Hunger</text>
+  <rect x="340" y="255" width="120" height="12" rx="6" fill="#e0e0e0"/>
+  <rect x="340" y="255" width="100" height="12" rx="6" fill="url(#greenBar)"/>
+  
+  <text x="285" y="290" fill="#555" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">Happy</text>
+  <rect x="340" y="280" width="120" height="12" rx="6" fill="#e0e0e0"/>
+  <rect x="340" y="280" width="85" height="12" rx="6" fill="url(#greenBar)"/>
+  
+  <text x="285" y="315" fill="#555" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">Energy</text>
+  <rect x="340" y="305" width="120" height="12" rx="6" fill="#e0e0e0"/>
+  <rect x="340" y="305" width="70" height="12" rx="6" fill="#FFC107"/>
+  
+  <!-- Buttons -->
+  <rect x="270" y="340" width="70" height="35" rx="8" fill="url(#tamaBg)"/>
+  <text x="305" y="363" text-anchor="middle" fill="white" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600">🍕 Feed</text>
+  
+  <rect x="350" y="340" width="70" height="35" rx="8" fill="url(#tamaBg)"/>
+  <text x="385" y="363" text-anchor="middle" fill="white" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600">🎮 Play</text>
+  
+  <rect x="430" y="340" width="70" height="35" rx="8" fill="url(#tamaBg)"/>
+  <text x="465" y="363" text-anchor="middle" fill="white" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600">😴 Sleep</text>
+  
+  <!-- Tech badges -->
+  <text x="400" y="430" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Inter, system-ui, sans-serif" font-size="14">JavaScript • HTML • CSS</text>
+</svg>

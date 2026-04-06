@@ -902,8 +902,21 @@ body.no-scroll {
 
 /* ---------- SECTIONS ---------- */
 
-section {
-  padding: 12px 14px 40px;
+/* Only apply padding to top-level content sections (not .hero which has its own) */
+main > .fade-in:not(.hero) {
+  padding: 0 14px 32px;
+}
+
+/* Reset nested sections - they inherit structure only */
+.section-heading,
+.hobby-grid,
+.skill-grid,
+.hero-tags,
+.project-actions,
+.project-header,
+.project-tags,
+.projects-grid {
+  padding: 0;
 }
 
 .section-heading {
@@ -952,14 +965,15 @@ section {
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px;
+  gap: 16px;
+  margin-bottom: 8px;
 }
 
 .card {
   border-radius: var(--card-radius);
   border: 1px solid var(--border);
   background: linear-gradient(155deg, rgba(10, 12, 26, 0.96), rgba(9, 11, 24, 0.99));
-  padding: 14px 14px 16px;
+  padding: 16px;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.7);
   font-size: 0.86rem;
   color: var(--muted);
@@ -1715,7 +1729,7 @@ main .project-actions {
 /* Hero tags spacing */
 main .hero-tags {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 /* Responsive adjustments */

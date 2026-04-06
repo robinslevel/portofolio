@@ -834,6 +834,49 @@ body.no-scroll {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.85);
 }
 
+/* Profile Image in Hero */
+.hero-profile-img {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid rgba(123, 92, 255, 0.4);
+  box-shadow: 
+    0 0 40px rgba(123, 92, 255, 0.35),
+    0 30px 60px rgba(0, 0, 0, 0.7),
+    inset 0 0 30px rgba(123, 92, 255, 0.1);
+  filter: saturate(0.85) contrast(1.05);
+  transition: 
+    transform 0.4s ease,
+    filter 0.4s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+  z-index: 1;
+}
+
+.hero-profile-img:hover {
+  transform: translate(-50%, -50%) scale(1.04);
+  filter: saturate(1) contrast(1.1);
+  border-color: rgba(123, 92, 255, 0.7);
+  box-shadow: 
+    0 0 60px rgba(123, 92, 255, 0.5),
+    0 35px 70px rgba(0, 0, 0, 0.8),
+    inset 0 0 30px rgba(123, 92, 255, 0.15);
+}
+
+/* Responsive profile image */
+@media (max-width: 730px) {
+  .hero-profile-img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
 .hero-badge {
   position: absolute;
   inset: auto 20px 20px auto;
